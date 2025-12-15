@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Search */
+.search {
+    margin: 20px 0;
+}
+
+.search input {
+    padding: 10px;
+    width: 70%;
+}
+
+/* Weather Info */
+#weatherInfo h1 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+/* Toggle Button */
+#themeToggle {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+body.dark {
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+body.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark input,
+body.dark button {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* Forecast */
+#forecast {
+    margin-top: 20px;
+}
+
+.forecast-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.forecast-card {
+    background: rgba(0,0,0,0.05);
+    padding: 8px;
+    border-radius: 6px;
+    width: 60px;
+    font-size: 12px;
+}
+
+body.dark .forecast-card {
+    background: #333;
+}
